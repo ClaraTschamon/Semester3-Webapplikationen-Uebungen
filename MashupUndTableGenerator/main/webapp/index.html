@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Input</title>
+    </head>
+    <body>
+        <form  method="get"
+               action="TableController">
+
+            <label for="Spalten">Anzahl Spalten</label>
+            <input type="number" min="1" max="16" id="Spalten" name="AnzahlSpalten">
+
+            <br/>
+
+            <label for="Zeilen">Anzahl Zeilen</label>
+            <input type="number" min="1" max="16" id="Zeilen" name="AnzahlZeilen"/>
+
+            <input type="hidden" name="dispatchto" value="TableInput"/>
+            <button type="submit" name="OK">OK</button>
+        </form>
+    </body>
+</html>
